@@ -187,6 +187,7 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
   .wrapper {
@@ -329,3 +330,263 @@ ul {
   }
 }
 /* end tickets  */
+/* start latest news */
+.latest-news .news-row:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.latest-news .news-row img {
+  width: 100px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+.latest-news .info {
+  flex-grow: 1;
+}
+.latest-news .info h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .latest-news .news-row {
+    display: block;
+  }
+  .latest-news .news-row label {
+    margin: 10px auto;
+    width: fit-content;
+  }
+}
+/* end latest new */
+/* start tasks */
+.tasks .task-row:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.tasks .info {
+  flex-grow: 1;
+}
+.tasks .done {
+  opacity: 0.3;
+}
+.tasks .done h3,
+.tasks .done p {
+  text-decoration: line-through;
+}
+.tasks .delete {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tasks .delete:hover {
+  color: var(--red-color);
+}
+/* end tasks */
+/* start latest upload */
+.latest-uploads ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.latest-uploads ul li img {
+  width: 40px;
+  height: 40px;
+}
+/* end latest upload  */
+/* start latest projects */
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--pink-color);
+}
+.last-project ul li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid pink;
+  margin-right: 15px;
+  z-index: 1;
+}
+.last-project ul li.done::before {
+  content: "";
+  background-color: palevioletred;
+}
+.last-project ul li.current::before {
+  content: "";
+  animation: change-color 0.9s infinite alternate;
+}
+.last-project .launch-icon {
+  position: absolute;
+  width: 160px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+
+/* end latest projects */
+
+/* start reminders */
+.reminders ul li .key {
+  width: 15px;
+  height: 15px;
+}
+.reminders ul li > .blue {
+  border-left: 2px solid var(--blue-color);
+  animation: color-blue 0.9s infinite alternate;
+}
+
+.reminders ul li > .pink {
+  border-left: 2px solid var(--pink-color);
+}
+.reminders ul li > .pink:hover {
+  background-color: rgba(243, 202, 231, 0.475);
+}
+.reminders ul li > .green {
+  border-left: 2px solid var(--green-color);
+}
+.reminders ul li > .green:hover {
+  background-color: rgba(207, 255, 207, 0.402);
+}
+.reminders ul li > .orange {
+  border-left: 2px solid var(--orange-color);
+}
+.reminders ul li > .orange:hover {
+  background-color: rgba(255, 243, 202, 0.475);
+}
+/*end reminders */
+/* start latest post */
+.latest-post .avatar {
+  width: 48px;
+  height: 48px;
+}
+.latest-post .post-content {
+  text-transform: capitalize;
+  list-style: 1.6;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  color: #8c8989;
+  font-size: 15px;
+}
+/* end latest post */
+/* start socail media */
+.socail-media .box {
+  padding-left: 70px;
+}
+
+.socail-media .box svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  transition: 0.3s;
+}
+.socail-media .box svg:hover {
+  transform: rotate(7deg);
+}
+.socail-media .twitter {
+  background-color: #1da0f234;
+  color: #1da1f2;
+}
+.socail-media .twitter svg,
+.socail-media .twitter a {
+  background-color: #1da1f2;
+}
+.socail-media .facebook {
+  background-color: #1876f22d;
+  color: #1877f2;
+}
+.socail-media .facebook svg,
+.socail-media .facebook a {
+  background-color: #1877f2;
+}
+.socail-media .youtube {
+  background-color: #ff00002e;
+  color: #ff0000;
+}
+.socail-media .youtube svg,
+.socail-media .youtube a {
+  background-color: #ff0000;
+}
+.socail-media .linkedin {
+  background-color: #0a66c214;
+  color: #0a67c2;
+}
+.socail-media .linkedin svg,
+.socail-media .linkedin a {
+  background-color: #0a67c2;
+}
+.socail-media .instagram {
+  background-color: #c1358433;
+  color: #c13585;
+}
+.socail-media .instagram svg,
+.socail-media .instagram a {
+  background-color: #c13585;
+}
+/* end socail media */
+/* start project */
+.projects .responsive-table {
+  overflow: auto;
+}
+.projects table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+.projects thead td {
+  background-color: #eee;
+  font-weight: bold;
+}
+.projects table td {
+  padding: 15px;
+}
+.projects tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+}
+.projects table tbody tr td:last-child {
+  border-right: 1px solid #eee;
+}
+.projects tbody tr:hover td {
+  background-color: #faf7f7;
+}
+
+.projects table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.projects table img:not(:first-child) {
+  margin-left: -20px;
+}
+.projects .label {
+  font-size: 12px;
+}
+/* end project */
+
+/* start animation */
+@keyframes change-color {
+  from {
+    background-color: palevioletred;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+@keyframes color-blue {
+  from {
+    background-color: #300ab910;
+  }
+  to {
+    background-color: white;
+  }
+}
+/* end animation */
