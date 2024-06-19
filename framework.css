@@ -43,6 +43,9 @@
 .w-full {
   width: 100%;
 }
+.fw-bold {
+  font-weight: bold;
+}
 /* end */
 
 /* width */
@@ -62,6 +65,9 @@
 .p-20 {
   padding: 20px;
 }
+.pt-10 {
+  padding-top: 10px;
+}
 .pt-15 {
   padding-top: 15px;
 }
@@ -79,6 +85,18 @@
 }
 .pl-15 {
   padding-left: 15px;
+}
+.pr-30 {
+  padding-right: 30px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.m-0 {
+  margin: 0;
+}
+.m-15 {
+  margin: 15px;
 }
 .m-20 {
   margin: 20px;
@@ -107,6 +125,9 @@
 .mr-15 {
   margin-right: 15px;
 }
+.mb-0 {
+  margin-bottom: 0;
+}
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -116,16 +137,28 @@
 .mb-10 {
   margin-bottom: 10px;
 }
+.mb-15 {
+  margin-bottom: 15px;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
 .mb-25 {
   margin-bottom: 25px;
 }
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
 /* end */
 /* start postion */
 .p-relative {
   position: relative;
+}
+.p-absolute {
+  position: absolute;
 }
 /* end */
 
@@ -172,6 +205,10 @@
 .c-red {
   color: var(--red-color);
 }
+
+.c-blue {
+  color: var(--blue-color);
+}
 /* end */
 /* start text algin */
 .text-c {
@@ -200,10 +237,19 @@
 /* end */
 /* star border */
 .rad-6 {
-  border-radius: 6;
+  border-radius: 6px;
 }
 .rad-half {
   border-radius: 50%;
+}
+.border-eee {
+  border: 1px solid #eee;
+}
+.w-100 {
+  width: 100px;
+}
+.h-100 {
+  height: 100px;
 }
 /* end */
 /* start components */
@@ -219,6 +265,10 @@
 }
 .space-between {
   justify-content: space-between;
+}
+.space-end {
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .w-full {
   width: 100%;
@@ -248,9 +298,14 @@
 .b-non {
   border: none;
 }
-
+.border-ccc {
+  border: 1px solid #ccc;
+}
 .btn-shape {
   padding: 4px 10px;
   border-radius: 6px;
 }
 /* end */
+.rad-10 {
+  border-radius: 10px;
+}
